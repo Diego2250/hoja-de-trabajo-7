@@ -8,6 +8,11 @@ public class Tree {
     public Tree() {
         raiz=null; 
     }
+    
+    /** 
+     * @param key
+     * @param value
+     */
     public void insert(String key, String value) {
         Nodo n = new Nodo(key, value);
         if (raiz==null) {
@@ -31,6 +36,10 @@ public class Tree {
         
     }
 
+    
+    /** 
+     * @param llave
+     */
     public void delete(String llave) {
         String Mensaje="";
         Nodo tempNodo=raiz;
@@ -107,6 +116,10 @@ public class Tree {
         }
     }
 
+    
+    /** 
+     * @param n
+     */
     public void Order(Nodo n) {
         if (n!=null) {
             Order(n.izquierda);
@@ -117,6 +130,10 @@ public class Tree {
         }
     }
 
+    
+    /** 
+     * @param key
+     */
     public void Search(String key) {
         Nodo tempNodo=raiz;
         while (tempNodo != null && !tempNodo.llave.equals(key)) {
@@ -133,6 +150,10 @@ public class Tree {
         }
     }
 
+    
+    /** 
+     * @param key
+     */
     public void Translate(String key) {
         Nodo tempNodo=raiz;
         while (tempNodo != null && !tempNodo.llave.equals(key)) {
