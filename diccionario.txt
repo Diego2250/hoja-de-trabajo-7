@@ -4,3 +4,11 @@ homework,tarea,devoirs
 woman,mujer,femme
 town,pueblo,ville
 yes,si,Oui
+dance,bailan,dansent
+all,toda,toute
+the,la,la
+night,noche,nuit
+i,yo,je
+love,amo,aime
+being,estar,etre
+you,tu,tu

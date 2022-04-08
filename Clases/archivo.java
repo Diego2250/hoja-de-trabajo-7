@@ -10,6 +10,11 @@ public class archivo {
 
     public archivo() {
     }
+    
+    /** 
+     * @param nombre
+     * @return ArrayList
+     */
     public ArrayList LeerArchivo(String nombre){
         ArrayList<String> data= new ArrayList<>();
         try {
