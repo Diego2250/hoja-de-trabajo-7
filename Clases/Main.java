@@ -16,8 +16,8 @@ public class Main {
             String s="\nIngrese la opción que desea utilizar: \n" +
             "1. Traducir un archivo\n" +
             "2. Agregar una palabra\n" +
-            "3. Imprimir diccionario frances\n"+
-            "4. Imprimir diccionario ingles\n"+
+            "3. Imprimir diccionario frances-español\n"+
+            "4. Imprimir diccionario ingles-español\n"+
             "5. Salir";
             System.out.println(s);
             opcion=scan.nextByte(); 
@@ -38,11 +38,16 @@ public class Main {
                     a.agreagar(palabra_ingles, palabra_espanol, palabra_frances);
                     break; 
                 case 3:
+                    System.out.println("Diccionario frances-español");
+                    a.arbolfrances.inOrder(a.arbolfrances.root);
                     break;  
                 case 4:
+                    System.out.println("Diccionario ingles-español");
+                    a.arbolingles.inOrder(a.arbolingles.root);
                     break;
                 case 5:
                     System.out.println("Gracias por utilizar este porgrama, adios");
+                    salir=true; 
                     break;          
                 default:
                     System.out.println("opcion invalida");

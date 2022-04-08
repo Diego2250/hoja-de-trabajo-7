@@ -4,7 +4,6 @@
 import java.io.IOException;
 import java.util.ArrayList;
 
-import javax.naming.spi.DirStateFactory.Result;
 public class Actions {
     archivo arch=new archivo();
     ArrayList<String> datos=new ArrayList<>();
@@ -49,18 +48,26 @@ public class Actions {
         for (int i = 0; i < Frances.size(); i++) {
             arbolfrances.insert(Frances.get(i), Espanol.get(i));
         }
-        System.out.println("Diccionario Ingles: ");
         arbolingles.inOrder(arbolingles.root);
-        System.out.println("Diccionario Frances: ");
         arbolingles.inOrder(arbolfrances.root);
     }
 
+    
+    /** 
+     * @param key
+     * @param español
+     * @param frances
+     */
     public void agreagar(String key, String español, String frances) {
         arbolingles.insert(key, español);
         arbolfrances.insert(frances, español);
         System.out.println("Se han agregado las palabras correctamente");
     }
 
+    
+    /** 
+     * @param nombre
+     */
     public void Translate(String nombre) {
         String mensaje="";
         ArrayList<String> palabras=new ArrayList<>();
