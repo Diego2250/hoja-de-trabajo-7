@@ -1,19 +1,19 @@
-public class Nodo {
-    public Nodo padre; 
+public class Nodo<K, V> {
+    public Nodo root; 
     public Nodo izquierda;
     public Nodo derecha; 
-    public String valor;
-    public String llave;
+    public V valor;
+    public K llave;
     
     /** 
      * @param key
      * @param value
      */
-    public Nodo(String key, String value) {
+    public Nodo(K key) {
         llave=key; 
-        valor=value; 
-        padre=null;
+        root=null;
         derecha=null;
         izquierda=null; 
+        valor=null; 
     }        
 }
